@@ -15,7 +15,7 @@ const MeetupDetails = (props) => {
         title={props.meetupData.title}
         address={props.meetupData.address}
         description={props.meetupData.description}
-      />{" "}
+      />
     </>
   );
 };
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    fallback: false,
+    fallback: "blocking",
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
