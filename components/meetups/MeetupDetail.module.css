@@ -1,0 +1,17 @@
+.detail {
+  text-align: center;
+  background: rgb(117, 72, 72);
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.detail img {
+  width: 80%;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.detail p {
+  margin: 1rem;
+}
